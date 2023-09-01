@@ -6,7 +6,7 @@
 /*   By: nrossel <nrossel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 10:51:13 by nrossel           #+#    #+#             */
-/*   Updated: 2023/09/01 10:39:26 by nrossel          ###   ########.fr       */
+/*   Updated: 2023/09/01 15:02:51 by nrossel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void	single_builtin(t_exe *exe, t_pipe *pip, t_shell *shell_info)
 {
 	int		out_backup;
 	int		in_backup;
-	
+
 	g_errno = 0;
 	create_cmd_n_args_builtins(exe, &exe->trash_x);
 	in_backup = dup(0);

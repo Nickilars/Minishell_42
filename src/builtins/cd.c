@@ -6,7 +6,7 @@
 /*   By: nrossel <nrossel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 10:49:17 by nrossel           #+#    #+#             */
-/*   Updated: 2023/08/29 10:49:18 by nrossel          ###   ########.fr       */
+/*   Updated: 2023/09/01 15:33:43 by nrossel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ static void	go_to_oldpwd(t_shell *info)
 		return ;
 	}
 	change_dir(info->cwd, old_pwd->valeur);
+	printf("%s\n", old_pwd->valeur);
 }
 
 /* -------------------- 2.Cd with args -------------------- */

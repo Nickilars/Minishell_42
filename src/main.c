@@ -6,7 +6,7 @@
 /*   By: nrossel <nrossel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 12:43:18 by nrossel           #+#    #+#             */
-/*   Updated: 2023/09/01 14:18:09 by nrossel          ###   ########.fr       */
+/*   Updated: 2023/09/01 15:12:50 by nrossel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ static char	*ft_readline(t_shell *parse, t_exe *exec)
 	tmp = purify_buffer(buffer, &parse->trash_lst);
 	if (tmp && *tmp)
 	{
-		if (ft_strncmp(tmp, old_buffer, ft_strlen(old_buffer)) != 0)
+		if (ft_strncmp(tmp, old_buffer, ft_strlen(tmp))
+			|| ft_strncmp(tmp, old_buffer, ft_strlen(old_buffer)))
 		{
 			add_history(tmp);
 			old_buffer = tmp;

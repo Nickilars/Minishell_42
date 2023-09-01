@@ -78,7 +78,7 @@ SRCS 			=	$(addprefix $(SRC_PATH)/,$(SRC)) $(addprefix $(BUILTINS_PATH)/,$(BUILT
 OBJS			=	$(SRCS:.c=.o)
 
 %.o: %.c minishell.h
-			@printf "$(_GREEN)minishell object$(_END) :		%-33.33s\r									$(_GREEN)[$(_END)$(_GREEN)✓$(_END)$(_GREEN)]$(_END)\n" $@
+			@printf "$(_GREEN)minishell object$(_END) :	%-33.33s\r								$(_GREEN)[$(_END)$(_GREEN)✓$(_END)$(_GREEN)]$(_END)\n" $@
 			@${CC} ${CFLAGS} $(INCLUDES) -c $< -o $@
 
 $(NAME):	$(OBJS) libft/libft.a

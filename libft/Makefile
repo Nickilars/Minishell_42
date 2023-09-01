@@ -96,7 +96,7 @@ SRCS	= $(addprefix $(SRC_PATH)/,$(SRC)) $(addprefix $(LIST_PATH)/,$(SRC_SLIST)) 
 OBJS	= $(SRCS:.c=.o)
 
 %.o: %.c
-			@printf "$(_VIOLET)Libft object$(_END) :			%-33.33s\r									$(_GREEN)[$(_END)$(_GREEN)✓$(_END)$(_GREEN)]$(_END)\n" $@
+			@printf "$(_VIOLET)Libft object$(_END) :		%-33.33s\r								$(_GREEN)[$(_END)$(_GREEN)✓$(_END)$(_GREEN)]$(_END)\n" $@
 			@${CC} ${CFLAGS} -c $< -o $@
 
 
